@@ -13,7 +13,8 @@ cd /root/new2024/
 git reset --hard
 git pull
 #cd /root/SDA_ALL/main_oct0pus/
-
+Xvfb -ac :99 -screen 0 1280x1024x16 &
+export DISPLAY=:99
 
 chmod +x *
 #ngrok authtoken $NGROK_TOKENS
