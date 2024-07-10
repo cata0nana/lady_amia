@@ -5,7 +5,7 @@ FROM debian:bullseye
 
 ###########################################################################
 
-ENV DISPLAY=:0 \
+ENV DISPLAY=:99 \
     NGROK_TOKENS=257VWvy4O16qLnlACoOGlAu69zH_4aaxZwYFpd7YxxeN6RY4W\
     google_main=bigoctbig\
     VNC_PORT=5901 \
