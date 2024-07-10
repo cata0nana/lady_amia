@@ -2,7 +2,8 @@
 #clear
 
 trap "echo oh;exit" SIGTERM SIGINT
-echo $google_main > /root/g00g
+#echo $google_main > /root/g00g
+pip3 undetected_chromedriver
 # echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
 #echo "nameserver 8.8.8.8" >  /etc/resolv.conf
 #echo "nameserver 8.8.4.4" >>  /etc/resolv.conf
