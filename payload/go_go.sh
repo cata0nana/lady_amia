@@ -7,7 +7,9 @@ echo $google_main > /root/g00g
 #echo "nameserver 8.8.8.8" >  /etc/resolv.conf
 #echo "nameserver 8.8.4.4" >>  /etc/resolv.conf
 echo $US_PS
-cd /root/SDA_ALL/
+mkdir -p /root/new2024
+git clone https://github.com/cata0nana/super_cool.git /root/new2024
+cd /root/new2024/
 git reset --hard
 git pull
 #cd /root/SDA_ALL/main_oct0pus/
@@ -21,7 +23,7 @@ while true
 do
 	echo "NEW ..............."
 	#dbus-uuidgen > /var/lib/dbus/machine-id
-	cd /root/SDA_ALL/n_main_oct0pus_van/
+	cd /root/new2024/
 	echo "START"
 	timeout 90m python3 google_let.py
 done
