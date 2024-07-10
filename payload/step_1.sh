@@ -23,7 +23,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         #xvfb xserver-xephyr ttf-wqy-zenhei python2.7 supervisor asciinema 
 #< /dev/null > /dev/null
 pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
- pyvirtualdisplay pydub pyautogui emojis emoji undetected_chromedriver  \
+ pyvirtualdisplay pydub pyautogui emojis emoji \
  mysql-connector-python device_detector selenium-stealth
 apt-get install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /dev/null > /dev/null
 apt-get --assume-yes autoclean
