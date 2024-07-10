@@ -24,8 +24,9 @@ chmod +x *
 while true
 do
 	echo "NEW ..............."
+ 	export DISPLAY=:99
 	#dbus-uuidgen > /var/lib/dbus/machine-id
 	cd /root/new2024/
 	echo "START"
-	timeout 90m python3 google_let.py
+	timeout 90m python3 v0rtex_go.py
 done
