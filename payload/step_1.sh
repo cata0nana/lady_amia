@@ -9,7 +9,10 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3-tk python3-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor supervisor \
-        asciinema python3-pyvirtualdisplay 
+        asciinema python3-pyvirtualdisplay && curl --location --silent https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
+    && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
+    && apt-get update \
+    && apt-get install -y google-chrome-stable --no-install-recommends \
         #xvfb xserver-xephyr ttf-wqy-zenhei python2.7  asciinema xvfb
         #xfce4-goodies xfce4 \
         #thunar tumbler xarchiver \
