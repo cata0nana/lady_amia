@@ -51,6 +51,8 @@ rm geckodriver-v0.32.0-linux64.tar.gz
 chmod +x geckodriver
 mv geckodriver /usr/bin/geckodriver-30
 
+sed -i 's/\("$@\)/\1 --no-sandbox/' /opt/google/chrome/google-chrome
+
 
 echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
 #git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
